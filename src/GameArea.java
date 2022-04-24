@@ -4,7 +4,12 @@ import java.awt.Graphics;
 
 public class GameArea extends JPanel {
     
-    public GameArea() {
+    private int gridRows;
+    private int gridColumns;
+    private int gridCellSize;
+
+    public GameArea(JPanel board) {
+        board.setVisible(false);
         this.setBounds(100, 50, 100 ,100);
         this.setBackground(Color.red);
     }
