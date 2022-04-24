@@ -6,7 +6,6 @@ public class GameBoard extends JFrame {
         this.add(new GameArea());
     }
 
-    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
