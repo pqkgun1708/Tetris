@@ -11,6 +11,9 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  * Spawn new block
  * Moving, rotating block on key press
  * Clear complete rows and add score
+# Requirements:
+ * Java
+ * Java Swing
  ---
  # Board game
  It's kinda simple by using JForm to generate one, however we must follow the formula 
