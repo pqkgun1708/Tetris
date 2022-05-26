@@ -1,5 +1,6 @@
 # Tetris
-This is a simple game that we use what we learnt in OOP class to practice the concept of OOP
+This is a simple game that we use what we learnt in OOP class to practice the concept of OOP.
+In this project, we use the Apache Net Bean IDE thanks to its beginner friendly GUI design. 
 
 # To do list:
  * Create the board game
