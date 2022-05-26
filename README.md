@@ -13,7 +13,7 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  * Clear complete rows and add score
  ---
  # Board game
- * Using JForm to generate one, kinda simple, however we must follow the formula 
- * ![image](https://user-images.githubusercontent.com/52684784/170531720-a78f9f77-d865-4352-a5c3-d117951f5b68.png)
+ Using JForm to generate one, kinda simple, however we must follow the formula 
+ ![image](https://user-images.githubusercontent.com/52684784/170531720-a78f9f77-d865-4352-a5c3-d117951f5b68.png)
 
  
