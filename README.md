@@ -34,6 +34,8 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  ![image](https://user-images.githubusercontent.com/52684784/170541897-8541c3e1-042b-4b1d-b70c-f8e175f17076.png)
  # Make block fall down
  With the block spawning at the middle top of game board, now we need to make them fall down by 
- printing its postion after a fixex timesteps and delete the previous one.
+ printing its postion after a fixed timestep and delete the previous one.
+ 
+ So the process is: **print-wait-delete-print**
 
  
