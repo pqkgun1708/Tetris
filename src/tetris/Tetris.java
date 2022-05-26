@@ -1,4 +1,4 @@
-package tetris;
+package src.tetris;
 
 public class Tetris {
     public static void main(String[] args) {

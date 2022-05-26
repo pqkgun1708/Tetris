@@ -1,4 +1,4 @@
-package tetris;
+package src.tetris;
 import javax.swing.JFrame;
 public class GameForm extends JFrame 
 {
