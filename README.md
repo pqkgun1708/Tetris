@@ -3,7 +3,7 @@ A simple game where we apply what we learnt in class to practice the concept of 
 
 In this project, we use the Apache Net Bean IDE thanks to its beginner friendly GUI design. 
 
-# To do list:
+# To do list
  * Create the board game
  * Draw block on the board
  * Add block color
@@ -11,7 +11,7 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  * Spawn new block
  * Moving, rotating block on key press
  * Clear complete rows and add score
-# Requirements:
+# Requirements
  * Java
  * Java Swing
  ---
