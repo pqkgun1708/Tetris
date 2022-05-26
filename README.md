@@ -22,9 +22,11 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  After creating the board, now we need to draw the shape(tetrominoes) inside it.
  There are 7 tetrominoes in total.
  ![image](https://user-images.githubusercontent.com/52684784/170532176-af0e42d7-e8be-4d5b-827c-bd0361053e7c.png)
- Each tetromino will be stored in a 2d array with 0,1 where 1 is colored and 0 is none
+ 
+ Each tetrominoes will be stored in a 2d array with values 0, 1 where 1 is colored cell and otherwise
  ![image](https://user-images.githubusercontent.com/52684784/170536852-7fd7791d-2aae-4706-9948-4323bbec6fc0.png)
- Our outpust is something like this 
+ 
+ The output is something similar like this 
  ![image](https://user-images.githubusercontent.com/52684784/170536983-4560267d-80ab-424d-b85e-6486e370f750.png)
 
 
