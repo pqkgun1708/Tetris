@@ -31,7 +31,7 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  
  The output is something similar like this 
  
- ![image](https://user-images.githubusercontent.com/52684784/170541447-8644d06a-6dcf-400e-8196-eaf0baa835f0.png)
+ ![image](https://user-images.githubusercontent.com/52684784/170541897-8541c3e1-042b-4b1d-b70c-f8e175f17076.png)
 
 
  
