@@ -1,5 +1,6 @@
 # Tetris
-Simple game where we can apply what we learnt in OOP class
+This is a simple game that we use what we learnt in OOP class to practice the concept of OOP
+
 # To do list:
  * Create the board game
  * Draw block on the board
@@ -8,7 +9,7 @@ Simple game where we can apply what we learnt in OOP class
  * Spawn new block
  * Moving, rotating block on key press
  * Clear complete rows and add score
- ---------------------------------------
- # 1. How to make the board game
- * By using java swing
+ ---
+ # 1. How to make board game
+ * Thanks to GUI 
  
