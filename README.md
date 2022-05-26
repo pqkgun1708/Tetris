@@ -12,6 +12,6 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  * Moving, rotating block on key press
  * Clear complete rows and add score
  ---
- # 1. How to make board game
- * Thanks to GUI 
+ # Board game
+ * Using JForm to generate one, kinda simple
  
