@@ -21,7 +21,7 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  ![image](https://user-images.githubusercontent.com/52684784/170531720-a78f9f77-d865-4352-a5c3-d117951f5b68.png)
  # Drawing Block 
  After creating the board, now we need to draw the shape(tetrominoes) inside it.
- There are 7 tetrominoes in total.
+ There are 7 tetrominoes in total, each of them will have different shape and color to distinguish.
  
  ![image](https://user-images.githubusercontent.com/52684784/170532176-af0e42d7-e8be-4d5b-827c-bd0361053e7c.png)
  
