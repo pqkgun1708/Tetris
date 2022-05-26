@@ -16,10 +16,11 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  * Java Swing
  ---
  # Board game
- First, we create the game board where the tetris game happen, then we divided it into smaller cells base on the formula below
+ First, we create the game board by using JPanel, then we divided it into smaller cells base on the formula below.
  ![image](https://user-images.githubusercontent.com/52684784/170531720-a78f9f77-d865-4352-a5c3-d117951f5b68.png)
  # Drawing Block 
- After creating the board, now we need to draw the shape inside it
+ After creating the board, now we need to draw the shape inside it.
+ There are 7 tetrominos in total.
  ![image](https://user-images.githubusercontent.com/52684784/170532176-af0e42d7-e8be-4d5b-827c-bd0361053e7c.png)
 
  
