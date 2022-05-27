@@ -39,3 +39,4 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  So the process is: **print-wait-delete-print**
 
  
+![image](https://user-images.githubusercontent.com/52684784/170737184-b2143150-c182-4f1b-b2c6-7dccdaeaee07.png)
