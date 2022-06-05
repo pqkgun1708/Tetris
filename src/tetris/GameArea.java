@@ -3,6 +3,7 @@ package src.tetris;
 import java.awt.Color;
 import javax.swing.JPanel;
 import java.awt.Graphics;
+import TetrisShape.*;
 
 public class GameArea extends JPanel 
 {
@@ -10,6 +11,8 @@ public class GameArea extends JPanel
     private int gridColumns;
     private int gridCellSize;
     private TetrisBlock block;
+    private TetrisBlock[] blocks;
+    private Color[] background;
     
     // Set game board , constructor
     public GameArea(JPanel placeholder, int columns) 
@@ -22,6 +25,14 @@ public class GameArea extends JPanel
         gridColumns = columns;
         gridCellSize = this.getBounds().width / gridColumns;
         gridRows = this.getBounds().height / gridCellSize;
+        background = new Color[gridRows][gridColumns];
+        blocks = new TetrisBlock[]{new IShape(),
+                                   new JShape(),
+                                   new LShape(),
+                                   new OShape(),
+                                   new SShape(),
+                                   new TShape(),
+                                   new ZShape()};
         
         spawnBlock();
     }
