@@ -108,6 +108,7 @@ public class GameArea extends JPanel
         {
             return false;
         }
+        return true;
 
         int[][]shape = block.getShape(); //access block shape
         int w = block.getWidth();
@@ -127,16 +128,13 @@ public class GameArea extends JPanel
                 }
             }
         }
-        return true;
     }
 
     private boolean checkLeft()
     {
         if(block.getLeftEdge() == 0) return false;
 
-        int[][]shape = block.getShape(); //access block shape
-        int w = block.getWidth();
-        int h = block.getHeight();
+        return true;
 
         for(int row = 0; row < h; row++)
         {
@@ -152,16 +150,13 @@ public class GameArea extends JPanel
                 }
             }
         }
-        return true;
     }
 
     private boolean checkRight()
     {
         if(block.getRightEdge() == gridColumns) return false;
 
-        int[][]shape = block.getShape(); //access block shape
-        int w = block.getWidth();
-        int h = block.getHeight();
+        return true;
 
         for(int row = 0; row < h; row++)
         {
@@ -177,7 +172,6 @@ public class GameArea extends JPanel
                 }
             }
         }
-        return true;
     }
 
     // set block location
@@ -278,16 +272,16 @@ public class GameArea extends JPanel
 
     private void drawBackground(Graphics g)
     {   Color color;
-        for(int row = 0; row < gridRows; row++)
+        for(int row = 0; row < gridRows; r++)
         {
             for(int c = 0; c < gridColumns; c++)
             {
-                color = background[row][c];
+                color = background[r][c];
 
                 if(color!=null)
                 {
                     int x = c * gridCellSize;
-                    int y = row * gridCellSize;
+                    int y = r * gridCellSize;
 
                     drawGridSquare(g,color,x,y);
                 }
@@ -297,7 +291,7 @@ public class GameArea extends JPanel
 
     private void drawGridSquare(Graphics g, Color color, int x, int y)
     {
-        g.setColor(color);
+        g.setColor(c);
         g.fillRect(x, y, gridCellSize, gridCellSize);
         g.setColor(Color.black);
         g.drawRect(x, y, gridCellSize, gridCellSize);
