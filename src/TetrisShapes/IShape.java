@@ -1,12 +1,12 @@
-package src.TetrisShape;
+package src.TetrisShapes;
 
-import tetris.TetrisBlock;
+import src.tetris.TetrisBlock;
 
 public class IShape extends TetrisBlock
 {
     public IShape()
     {
-        super(new int[][]{ {1, 1, 1, 1}} );
+        super(new int[][]{{1, 1, 1, 1}} );
     }
     
     @Override
@@ -18,7 +18,8 @@ public class IShape extends TetrisBlock
         {
             this.setX(this.getX() + 1);
             this.setY(this.getY() - 1);
-        } else 
+        }
+        else
         {
             this.setX(this.getX() - 1);
             this.setY(this.getY() + 1);
