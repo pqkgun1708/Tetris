@@ -48,7 +48,12 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
 * Shift down the lines above
 
 # Demo
+![image](https://user-images.githubusercontent.com/52684784/172908426-a4a36401-d4ed-4b7f-ac42-dc2a601cf852.png)
 
 # Deployemnt
 * Download the source code
 * Run GameForm file
+
+# Ref
+* [Discussion of the Tetris Applet](http://www.geom.uiuc.edu/java/tetris/explanation.html)
+* [Shape Explanation](https://www.iodraw.com/en/blog/211243890)
