@@ -20,7 +20,7 @@ public class TetrisBlock<availableColors>
         initShapes();
     }
 
-    private void initShapes() //constructor to modify blocks rotation
+    private void initShapes() //method to store & modify blocks rotations
     {
         shapes = new int[4][][]; //store rotation blocks
 

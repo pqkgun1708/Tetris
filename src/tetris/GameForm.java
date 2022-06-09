@@ -1,8 +1,17 @@
 package src.tetris;
+
 import javax.swing.JFrame;
+import javax.swing.InputMap;
+import javax.swing.ActionMap;
+import javax.swing.KeyStroke;
+import javax.swing.AbstractAction;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+
 public class GameForm extends JFrame {
 
     private GameArea garea;
+    private TextComponent scoreDisplay, levelDisplay;
 
     public GameForm() 
     {
@@ -14,7 +23,7 @@ public class GameForm extends JFrame {
         startGame();
     }
 
-    private void initControls()
+    private void initControls() //assign arrows keys to move blocks
     {
         InputMap im = this.getRootPane().getInputMap();
         ActionMap am = this.getRootPane().getActionMap();
