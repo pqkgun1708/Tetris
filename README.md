@@ -1,7 +1,7 @@
 # TETRIS
 A simple game where we apply what we learnt in class to practice the concept of OOP.
 
-In this project, we use the Apache Net Bean IDE thanks to its beginner friendly GUI design. 
+In this project, we use the Apache Net Bean IDE thanks to its beginner friendly GUI design. Though you can use others IDE.
 
 # To do list
  * Create the board game
@@ -11,6 +11,7 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  * Spawn new block
  * Moving, rotating block on key press
  * Clear complete rows and add score
+ 
 # Requirements
  * Java
  * Java Swing
@@ -44,3 +45,9 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
 * First we need to find the completed line
 * Remove it
 * Shift down the lines above
+
+# Demo
+
+# Deployemnt
+* Download the source code
+* Run GameForm file
