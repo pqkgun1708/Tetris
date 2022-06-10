@@ -56,7 +56,7 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
 * Shift down the lines above
 
 # Demo
-![image](https://user-images.githubusercontent.com/52684784/173118292-a971527f-5367-440f-bc9d-a14da3c67d6f.png)
+![image](https://user-images.githubusercontent.com/52684784/173127362-56cfeeea-1924-41d9-9d70-bdd5535ad5c6.png)
 
 # Deployment
 * Download the source code
