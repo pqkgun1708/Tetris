@@ -14,12 +14,10 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  
  # Team member
  
-| Name | ID |
+| Name | ID | Task 
 | :---: | :---: |
 | Phan Quoc Khoi | ITDSIU18028 | 
-| :---: | :---: | :---: |
 | Le Van| ITITIU19242 | 
-| :---: | :---: | :---: |
 | Pham Ngoc Tuan Anh | ITITIU19074 | 
  
 # Requirements
