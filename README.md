@@ -58,7 +58,7 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
 # Demo
 ![image](https://user-images.githubusercontent.com/52684784/172908426-a4a36401-d4ed-4b7f-ac42-dc2a601cf852.png)
 
-# Deployemnt
+# Deployment
 * Download the source code
 * Run GameForm file
 
