@@ -14,7 +14,7 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  
  # Team member
  
-| Name | ID | Task 
+| Name | ID | 
 | :---: | :---: |
 | Phan Quoc Khoi | ITDSIU18028 | 
 | Le Van| ITITIU19242 | 
