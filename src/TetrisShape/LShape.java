@@ -1,6 +1,6 @@
-package src.TetrisShapes;
+package src.TetrisShape;
 
-import src.tetris.TetrisBlock;
+import tetris.TetrisBlock;
 
 public class LShape extends TetrisBlock
 {
@@ -8,7 +8,6 @@ public class LShape extends TetrisBlock
     {
         super (new int[][]{ {1,0},
                             {1,0},
-                            {1,1}
-        });
+                            {1,1} });                      
     }
 }

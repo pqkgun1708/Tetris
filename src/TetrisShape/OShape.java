@@ -1,6 +1,6 @@
-package src.TetrisShapes;
+package src.TetrisShape;
 
-import src.tetris.TetrisBlock;
+import tetris.TetrisBlock;
 
 public class OShape extends TetrisBlock
 {
