@@ -42,29 +42,6 @@ public class GameArea extends JPanel
         block.spawn(gridColumns);
     }
 
-    // set block location
-    private void drawBlock(Graphics g)
-    {
-        int h = block.getHeight();
-        int w = block.getWidth();
-        Color c = block.getColor();
-        int[][] shape = block.getShape();
-
-        for(int row = 0; row < h; row++)
-        {
-            for(int col = 0; col < w; col++)
-            {
-                if(shape[row][col] == 1)
-                {
-                    int x = (block.getX() + col) * gridCellSize;
-                    int y = (block.getY() + row) * gridCellSize;
-
-                    drawGridSquare(g,c,x,y);
-                }
-            }
-        }
-    }
-
     public boolean isBlockOutOfBounds()
     {
         if(block.getY() < 0)
@@ -131,14 +108,15 @@ public class GameArea extends JPanel
         {
             return false;
         }
+        return true;
 
-        int[][] shape = block.getShape(); //access block shape
+        int[][]shape = block.getShape(); //access block shape
         int w = block.getWidth();
         int h = block.getHeight();
 
         for(int col = 0; col < w; col++)
         {
-            for(int row = h - 1; row >= 0; row--)
+            for(int row = h - 1; row >=0; row--)
             {
                 if(shape[row][col] != 0)
                 {
@@ -150,16 +128,13 @@ public class GameArea extends JPanel
                 }
             }
         }
-        return true;
     }
 
     private boolean checkLeft()
     {
         if(block.getLeftEdge() == 0) return false;
 
-        int[][] shape = block.getShape(); //access block shape
-        int w = block.getWidth();
-        int h = block.getHeight();
+        return true;
 
         for(int row = 0; row < h; row++)
         {
@@ -175,16 +150,13 @@ public class GameArea extends JPanel
                 }
             }
         }
-        return true;
     }
 
     private boolean checkRight()
     {
         if(block.getRightEdge() == gridColumns) return false;
 
-        int[][] shape = block.getShape(); //access block shape
-        int w = block.getWidth();
-        int h = block.getHeight();
+        return true;
 
         for(int row = 0; row < h; row++)
         {
@@ -200,10 +172,32 @@ public class GameArea extends JPanel
                 }
             }
         }
-        return true;
     }
 
-    public int clearLines(int i) //
+    // set block location
+    private void drawBlock(Graphics g) 
+    {
+        int h = block.getHeight();
+        int w = block.getWidth();
+        Color c = block.getColor();
+        int[][] shape = block.getShape();
+        
+        for(int row = 0; row < h; row++)
+        {
+            for(int col = 0; col < w; col++)
+            {
+                if(shape[row][col] == 1)
+                {   
+                    int x = (block.getX() + col) * gridCellSize;
+                    int y = (block.getY() + row) * gridCellSize;
+
+                    drawGridSquare(g,c,x,y);
+                }
+            }
+        }
+    }
+
+    public int clearLines(int i)
     {
         boolean lineFilled;
         int linesCleared = 0;
@@ -278,7 +272,7 @@ public class GameArea extends JPanel
 
     private void drawBackground(Graphics g)
     {   Color color;
-        for(int r = 0; r < gridRows; r++)
+        for(int row = 0; row < gridRows; r++)
         {
             for(int c = 0; c < gridColumns; c++)
             {
@@ -297,7 +291,7 @@ public class GameArea extends JPanel
 
     private void drawGridSquare(Graphics g, Color color, int x, int y)
     {
-        g.setColor(color);
+        g.setColor(c);
         g.fillRect(x, y, gridCellSize, gridCellSize);
         g.setColor(Color.black);
         g.drawRect(x, y, gridCellSize, gridCellSize);
