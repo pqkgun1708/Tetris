@@ -1,10 +1,10 @@
-package src.tetris;
+package tetris;
 
+import TetrisShape.*;
 import java.awt.Color;
+import javax.swing.JPanel;
 import java.awt.Graphics;
 import java.util.Random;
-import javax.swing.JPanel;
-import src.TetrisShape.*;
 
 public class GameArea extends JPanel 
 {
@@ -18,7 +18,7 @@ public class GameArea extends JPanel
     // Set game board , constructor
     public GameArea(JPanel placeholder, int columns) 
     {
-        placeholder.setVisible(false);
+        //placeholder.setVisible(false);
         this.setBounds(placeholder.getBounds());
         this.setBackground(placeholder.getBackground());
         this.setBorder(placeholder.getBorder());
@@ -26,7 +26,6 @@ public class GameArea extends JPanel
         gridColumns = columns;
         gridCellSize = this.getBounds().width / gridColumns;
         gridRows = this.getBounds().height / gridCellSize;
-        background = new Color[gridRows][gridColumns];
         blocks = new TetrisBlock[]{new IShape(),
                                    new JShape(),
                                    new LShape(),
@@ -34,6 +33,11 @@ public class GameArea extends JPanel
                                    new SShape(),
                                    new TShape(),
                                    new ZShape()};
+    }
+    
+    public void initBackGround()
+    {
+        background = new Color[gridRows][gridColumns];
     }
     
     public void spawnBlock()

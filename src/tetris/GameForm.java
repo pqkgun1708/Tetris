@@ -1,4 +1,4 @@
-package src.tetris;
+package tetris;
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
@@ -10,6 +10,7 @@ import javax.swing.KeyStroke;
 public class GameForm extends JFrame 
 {
     private GameArea ga;
+    private GameThread gt;
     
     public GameForm() 
     {
@@ -18,7 +19,6 @@ public class GameForm extends JFrame
         ga = new GameArea(gameAreaPlaceholder, 10);
         this.add(ga); 
         initControls();
-        startGame();
     }
     
     //key bidning
@@ -63,7 +63,9 @@ public class GameForm extends JFrame
     
     public void startGame()
     {
-        new GameThread(ga, this).start();
+        ga.initBackGround();
+        gt = new GameThread(ga, this);
+        gt.start();
     }
     
     public void updateScore(int score)
@@ -83,6 +85,7 @@ public class GameForm extends JFrame
         gameAreaPlaceholder = new javax.swing.JPanel();
         scoreDisplay = new javax.swing.JLabel();
         levelDisplay = new javax.swing.JLabel();
+        MenuBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -105,12 +108,21 @@ public class GameForm extends JFrame
         levelDisplay.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         levelDisplay.setText("Level: 1");
 
+        MenuBtn.setText("Menu");
+        MenuBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuBtnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(116, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(MenuBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addComponent(gameAreaPlaceholder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -123,6 +135,7 @@ public class GameForm extends JFrame
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(MenuBtn)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(scoreDisplay)
                         .addGap(18, 18, 18)
@@ -133,6 +146,14 @@ public class GameForm extends JFrame
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void MenuBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuBtnActionPerformed
+        // TODO add your handling code here:
+        // terminate gamethread whenever menu button is pressed
+        gt.interrupt();
+        this.setVisible(false);
+        Tetris.showMenu();
+    }//GEN-LAST:event_MenuBtnActionPerformed
 
     public static void main(String args[]) 
     {
@@ -171,6 +192,7 @@ public class GameForm extends JFrame
     // Width of game board must be divisible by columns
     // Height of game board must be divisible by gridCellSize
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton MenuBtn;
     private javax.swing.JPanel gameAreaPlaceholder;
     private javax.swing.JLabel levelDisplay;
     private javax.swing.JLabel scoreDisplay;

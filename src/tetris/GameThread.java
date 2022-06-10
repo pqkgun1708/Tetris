@@ -1,4 +1,4 @@
-package src.tetris;
+package tetris;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -10,13 +10,16 @@ public class GameThread extends Thread
     private int score;
     private int level = 1;
     private int scorePerLevel = 3;
-    private int pause = 1000;
+    private int speed = 700;
     private int speedupPerLevel = 100;
     
     public GameThread(GameArea ga, GameForm gf)
     {
         this.ga = ga;
         this.gf = gf;
+        
+        gf.updateScore(score);
+        gf.updateLevel(level);
     }
     
     @Override
@@ -29,17 +32,17 @@ public class GameThread extends Thread
             while(ga.moveBlockDown()) 
             {
                 try {
-                    Thread.sleep(pause);
+                    Thread.sleep(speed);
                 } 
                 catch (InterruptedException ex) 
                 {
-                    Logger.getLogger(GameThread.class.getName()).log(Level.SEVERE, null, ex);
+                    return;
                 }
             }
             
             if (ga.isOutOfBound())
             {
-                System.out.println("Game Over");
+                Tetris.gameOver(score);
                 break;
             }
             
@@ -52,7 +55,7 @@ public class GameThread extends Thread
             {
                 level = lvl;
                 gf.updateLevel(level);
-                pause -= speedupPerLevel;
+                speed -= speedupPerLevel;
             }
         }
     }

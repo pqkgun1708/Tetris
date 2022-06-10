@@ -1,6 +1,6 @@
-package src.TetrisShape;
+package TetrisShape;
 
-import src.tetris.TetrisBlock;
+import tetris.TetrisBlock;
 
 public class ZShape extends TetrisBlock
 {
