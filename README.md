@@ -12,6 +12,16 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  * Moving, rotating block on key press
  * Clear complete rows and add score
  
+ # Team member
+ 
+| Name | ID |
+| :---: | :---: |
+| Phan Quoc Khoi | ITDSIU18028 | 
+| :---: | :---: | :---: |
+| Le Van| ITITIU19242 | 
+| :---: | :---: | :---: |
+| Pham Ngoc Tuan Anh | ITITIU19074 | 
+ 
 # Requirements
  * Java
  * Java Swing
