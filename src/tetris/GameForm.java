@@ -1,8 +1,12 @@
 package src.tetris;
-import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
 public class GameForm extends JFrame {
 
     private GameArea garea;
+    private TextComponent scoreDisplay, levelDisplay;
 
     public GameForm() 
     {
