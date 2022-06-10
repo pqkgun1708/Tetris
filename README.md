@@ -16,7 +16,7 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  
 | Name | ID | Task | Contribution |
 | :---: | :---: | :---: | :---: |
-| Phan Quoc Khoi | ITDSIU18028 | 5-7, Readme | 33% |
+| Phan Quoc Khoi | ITDSIU18028 | 5-7, UI, Readme | 33% |
 | Le Van| ITITIU19242 | 3-4, Cleaning, Debug | 33% |
 | Pham Ngoc Tuan Anh | ITITIU19074 | 1-2, Ppt | 33% |
  
