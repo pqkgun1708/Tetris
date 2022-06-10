@@ -60,7 +60,7 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
 
 # Deployment
 * Download the source code
-* Run GameForm file
+* Run Tetris.java 
 
 # Ref
 * [Discussion of the Tetris Applet](http://www.geom.uiuc.edu/java/tetris/explanation.html)
