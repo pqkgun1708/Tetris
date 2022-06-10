@@ -1,4 +1,4 @@
-package src.TetrisShape;
+package TetrisShape;
 
 import tetris.TetrisBlock;
 

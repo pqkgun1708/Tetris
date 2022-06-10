@@ -16,7 +16,7 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
  
 | Name | ID | Task | Contribution |
 | :---: | :---: | :---: | :---: |
-| Phan Quoc Khoi | ITDSIU18028 | 5-7, Readme | 33% |
+| Phan Quoc Khoi | ITDSIU18028 | 5-7, UI, Readme | 33% |
 | Le Van| ITITIU19242 | 3-4, Cleaning, Debug | 33% |
 | Pham Ngoc Tuan Anh | ITITIU19074 | 1-2, Ppt | 33% |
  
@@ -56,11 +56,11 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
 * Shift down the lines above
 
 # Demo
-![image](https://user-images.githubusercontent.com/52684784/172908426-a4a36401-d4ed-4b7f-ac42-dc2a601cf852.png)
+![image](https://user-images.githubusercontent.com/52684784/173118292-a971527f-5367-440f-bc9d-a14da3c67d6f.png)
 
 # Deployment
 * Download the source code
-* Run GameForm file
+* Run Tetris.java 
 
 # Ref
 * [Discussion of the Tetris Applet](http://www.geom.uiuc.edu/java/tetris/explanation.html)

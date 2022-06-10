@@ -1,5 +1,6 @@
-package src.TetrisShape;
+package TetrisShape;
 
+import java.awt.Color;
 import tetris.TetrisBlock;
 
 public class JShape extends TetrisBlock
