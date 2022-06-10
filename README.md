@@ -64,4 +64,4 @@ In this project, we use the Apache Net Bean IDE thanks to its beginner friendly 
 
 # Ref
 * [Discussion of the Tetris Applet](http://www.geom.uiuc.edu/java/tetris/explanation.html)
-* [Shape Explanation](https://www.iodraw.com/en/blog/211243890)
+* [Tetris Explanation](https://www.iodraw.com/en/blog/211243890)
