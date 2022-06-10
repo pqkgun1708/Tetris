@@ -4,21 +4,21 @@ A simple game where we apply what we learnt in class to practice the concept of 
 In this project, we use the Apache Net Bean IDE thanks to its beginner friendly GUI design. Though you can use others IDE.
 
 # To do list
- * Create the board game
- * Draw block on the board
- * Add block color
- * Make the block fall down
- * Spawn new block
- * Moving, rotating block on key press
- * Clear complete rows and add score
+ 1. Create the board game
+ 2. Draw block on the board
+ 3. Add block color
+ 4. Make the block fall down
+ 5. Spawn new block
+ 6. Moving, rotating block on key press
+ 7. Clear complete rows and add score
  
  # Team member
  
-| Name | ID | 
-| :---: | :---: |
-| Phan Quoc Khoi | ITDSIU18028 | 
-| Le Van| ITITIU19242 | 
-| Pham Ngoc Tuan Anh | ITITIU19074 | 
+| Name | ID | Task | Contribution |
+| :---: | :---: | :---: | :---: |
+| Phan Quoc Khoi | ITDSIU18028 | 5-7, Readme | 33% |
+| Le Van| ITITIU19242 | 3-4, Cleaning, Debug | 33% |
+| Pham Ngoc Tuan Anh | ITITIU19074 | 1-2, Ppt | 33% |
  
 # Requirements
  * Java
