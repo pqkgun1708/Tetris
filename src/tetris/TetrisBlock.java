@@ -10,7 +10,7 @@ public class TetrisBlock
     private Color color;
     private int x, y;
     private int currentRotation;
-    private Color[] colorList = {Color.green, Color.red, Color.blue, Color.yellow};
+    private Color[] colorList = {Color.green, Color.red, Color.blue, Color.yellow, Color.pink, Color.orange, Color.cyan};
     
     public TetrisBlock(int[][] shape) 
     {
